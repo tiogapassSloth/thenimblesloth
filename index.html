@@ -1,56 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Nimble Sloth</title>
-    <style>
-        h1 {text-align: center;}
-        p {text-align: center;}
-        div {text-align: center;}
-        </style>
-</head>
-<body>
-    <h1>The Nimble Sloth</h1>
-    <picture>
-       <center>
-        <a href="./aboutme.html"><img src="./assets/images/nimblesloth.png" alt="nimble sloth" class="center" 
-        width="100" 
-        height="200"></a>
-       </center> 
-      </picture>
-    
-    <h2>Work Experience</h2>
-        
-    Recruiting AI/ML Startup
-        <ul>
-            <li>Technical Program Manager</li>
-            <li>Principal Integration Consultant</li>
-        </ul>
+import React from "react";
 
-    HCM Software Company
-    <ul>
-        <li>Integration Lead</li>
-        <li>Product Manger</li>
-        <li>QA Automation Engineer</li>
-        <li>Integration Systems Support Analyst</li>
-        <li>Quality Assurance Engineer</li>
-    </ul>
-<br/>
-    California State University
-    <ul>
-        <li>IT Help Desk</li>
-        <li>Lab Instructor</li>
-    </ul>
+export default function TravelAdventuresSite() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-blue-100 to-white text-gray-800 p-6">
+      <header className="text-center mb-10">
+        <h1 className="text-4xl font-bold mb-2">Wanderlust Adventures</h1>
+        <p className="text-lg">Explore the world one journey at a time</p>
+      </header>
 
-    <h2>Education</h2>
-    California State University
-    <ul>
-        <li>BS, Business Information Systems</li>
-    </ul>
-    <footer align="center">
-        <br />
-        <a href="mailto:thenimblesloth@nimblesloths.com">thenimblesloth@nimblesloths.com</a>
-    </footer>
-</body>
-</html>
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <article className="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img
+            src="https://source.unsplash.com/400x300/?mountains"
+            alt="Mountain Adventure"
+            className="w-full h-48 object-cover"
+          />
+          <div className="p-4">
+            <h2 className="text-xl font-semibold">Mountain Treks</h2>
+            <p>Conquer breathtaking peaks and witness stunning vistas.</p>
+          </div>
+        </article>
+
+        <article className="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img
+            src="https://source.unsplash.com/400x300/?beach"
+            alt="Beach Escape"
+            className="w-full h-48 object-cover"
+          />
+          <div className="p-4">
+            <h2 className="text-xl font-semibold">Beach Escapes</h2>
+            <p>Relax on golden sands and swim in crystal-clear waters.</p>
+          </div>
+        </article>
+
+        <article className="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img
+            src="https://source.unsplash.com/400x300/?city"
+            alt="City Adventures"
+            className="w-full h-48 object-cover"
+          />
+          <div className="p-4">
+            <h2 className="text-xl font-semibold">Urban Explorations</h2>
+            <p>Discover vibrant cultures and iconic cityscapes.</p>
+          </div>
+        </article>
+      </section>
+
+      <section className="max-w-4xl mx-auto">
+        <h2 className="text-2xl font-bold mb-4">Travel Blog</h2>
+        <div className="space-y-6">
+          <article className="bg-white rounded-2xl shadow-md p-6">
+            <h3 className="text-xl font-semibold mb-2">5 Hidden Gems in the Alps</h3>
+            <p>Explore lesser-known destinations in the Alps that offer serene beauty and unforgettable adventures.</p>
+          </article>
+
+          <article className="bg-white rounded-2xl shadow-md p-6">
+            <h3 className="text-xl font-semibold mb-2">Solo Travel Tips for First-Timers</h3>
+            <p>Get practical advice and inspiring insights to make your solo journey safe and rewarding.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  );
+}
